@@ -2,7 +2,7 @@ import os
 
 
 # App config
-SECRET_KEY = os.environ.get("SECRET_KEY", "learn_hub_$$568fas4")
+SECRET_KEY = os.environ.get("SECRET_KEY", "gateway_$$568fas4")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 # JWT config

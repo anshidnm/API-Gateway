@@ -15,7 +15,7 @@ app.include_router(api_gateway, prefix="/api")
 
 
 @app.get(config.MEDIA_URL+"{location:path}", tags=["Media"])
-def media_files(location: str):
+async def media_files(location: str):
     try:
         root = f"/{config.MEDIA_ROOT.strip('/')}/"
         if os.path.isfile(root+location):
