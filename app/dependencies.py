@@ -18,9 +18,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-
-async def get_current_user(
-        user_id: Annotated[int, Depends(JwtBearer(auto_error=False))]
-    ):
-    return user_id
